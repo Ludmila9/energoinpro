@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="Енергоінвестпроект, електропостачальник, електртчна енергія, постачання, контакти, телефон, адреса, e-mail">
+	<meta name="description" content="ТОВ 'Енергоінвестпроект' - Ваш надійний електропостачальник">
+
+	<title>ТОВ "Енергоінвестпроект"</title>
+
+
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+	<header class="head">
+		<div class="container">
+			<div class="head-wrap">
+				<div class="logo"><img src="img/logoComp.png"></div>
+				<nav class="nav">
+					<ul class="nav-menu">
+						<li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Головна</a></li>
+						<li class="nav-menu__item"><a href="news.html" class="nav-menu__link">Новини</a></li>
+						<li class="nav-menu__item"><a href="general_questions.html" class="nav-menu__link">Споживачам</a>
+							<ul class="submenu">
+								<li><a href="price.html">Ціни та тарифи</a></li>
+								<li><a href="quality.html">Якість електричної енергії</a></li>
+								<li><a href="disconnection.html">Припинення та відновлення електроживлення</a></li>
+								<li><a href="dispute.html">Розгляд звернень та вирішення спорів</a></li>
+								<li><a href="electrical_safety.html">Енергоефективність та Електробезпека</a></li>
+								<li><a href="general_questions.html">Загальні питання</a></li>
+							</ul>
+						</li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">Документи</a>
+							<ul class="submenu">
+								<li><a href="contract.html">Договір та Комерційні пропозиції</a></li>
+								<li><a href="zakon.html">Нормативно-правові акти України</a></li>
+							</ul>
+						</li>
+						<li class="nav-menu__item"><a href="contact.html" class="nav-menu__link nav-menu__link-active">Контакти</a></li>
+						<li class="nav-menu__item-user"><a href="user.html"><img class="user" src="img/user.png"></a></li>
+					</ul>
+				</nav>
+				<nav class="burger-menu">
+					<a href="" class="burger-menu__btn">
+						<span class="burger-menu__lines"></span>
+					</a>
+					<ul class="burger-menu__nav">
+						<li class="burger-menu__link"><a href="index.html">Головна</a></li>
+						<li class="burger-menu__link"><a href="news.html">Новини</a></li>
+						<li class="burger-menu__link"><a href="general_questions.html">Споживачам</a>
+							<ul class="burger-submenu">
+								<li><a href="price.html">Ціни та тарифи</a></li>
+								<li><a href="quality.html">Якість електричної енергії</a></li>
+								<li><a href="disconnection.html">Припинення та відновлення електроживлення</a></li>
+								<li><a href="dispute.html">Розгляд звернень та вирішення спорів</a></li>
+								<li><a href="electrical_safety.html">Енергоефективність та Електробезпека</a></li>
+								<li><a href="general_questions.html">Загальні питання</a></li>
+							</ul>
+						</li>
+						<li class="burger-menu__link"><a href="#">Документи</a>
+							<ul class="burger-submenu">
+								<li><a href="contract.html">Договір та Комерційні пропозиції</a></li>
+								<li><a href="zakon.html">Нормативно-правові акти України</a></li>
+							</ul>
+						</li>
+						<li class="burger-menu__link"><a href="contact.html">Контакти</a></li>
+						<li class="burger-menu__link"><a href="user.html">Особистий кабінет</a></li>
+					</ul>
+					<div class="burger-menu__overlay"></div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero-page hero-page-contact">
+			<div class="container">
+				<div class="hero-page-wrap">
+					<div class="title-page">Контакти</div>
+					<div class="hero-page__img hero-page__img-contact"><img src="img/hero-contact-img.png"></div>
+				</div>
+				
+				<a href="#contact-form" class="hero-page-scroll">
+					<img src="img/Arrow-down.png">
+					<p>Гортати нижче</p>
+				</a>
+				</a>
+			</div>
+		</section>
+		<section class="contact-form" id="contact-form">
+			<div class="container">
+				<div class="contact-form-wrap">
+					<div class="title-small">
+						Щоб зв’язатися з нами,<br> заповніть форму зворотнього зв’язку нижче:
+					</div>
+					<form class="callback" method="POST">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="EIP">
+						<input type="hidden" name="admin_email" value="	eipeconomist@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка з сайту EIP">
+						<!-- END Hidden Required Fields -->				
+						<input type="hidden" name="Contact-form" value="Contact-form">
+
+
+						<input type="text" name="company" placeholder="Найменування компанії" required>
+						<input type="text" name="Name" placeholder="Ваше ім'я" required>
+						<input type="text" name="Phone" placeholder="Контактний телефон +380" required>
+						<input type="email" name="Е-mail" placeholder="Е-mail" required>
+						<select name="question">
+							<option value disabled selected>Оберіть питання</option>
+							<option>Щодо діючих тарифів на електроенергію</option>
+							<option>Щодо договірних відносин споживач - енергопостачальник</option>
+							<option>Отримати комерційну пропозицію</option>
+							<option>Направити звернення, претензію, скаргу</option>
+							<option>Повідомлення про загрозу електробезпеки</option>
+							<option>Поставити питання спеціалісту</option>
+							<option>Поставити питання спеціалісту</option>
+						</select>
+						<textarea name="message" rows="10" placeholder="Залиште Ваше повідомлення"></textarea>
+						<button class="btn callback-btn">Надіслати</button>
+					</form>
+					
+				</div>
+			</div>
+		</section>
+		<!-- <div class="modal" id="modal-ans">
+			<div class="modal-answer">
+				<p class="text"><span>Дякуємо за звернення! </span><br> Наші фахівці зв’яжуться з Вами в найкоротші терміни.</p>
+				<button class="modal-close" aria-label="close modal">
+					x
+				</button>
+			</div>
+		</div> -->
+
+		<section class="contact-map">
+			<div class="contact-box__map" id="map">
+				<!-- <img src="img/snazzy-image.png"> -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20515.12343370565!2d36.24726442531742!3d50.004036933777414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0b77c8d726f%3A0x980134b840baa6f6!2z0LLRg9C70LjRhtGPINCo0LXQstGH0LXQvdC60LAsIDE0Niwg0KXQsNGA0LrRltCyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1suk!2sua!4v1583915171978!5m2!1suk!2sua"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<div class="contact-box__info">
+				<p class="contact-box__title">Також Ви можете зв’язатися<br> з нами за нижчевказаними<br> контактами:</p>
+				<p class="contact-box__text"><span>Юридична адреса: </span>61013, м.&nbsp;Харків, вул.&nbsp;Шевченка,&nbsp;146, оф.&nbsp;39</p>
+				<p class="contact-box__text"><span>Адреса для листування: </span>61057, м.&nbsp;Харків, а/с&nbsp;7391</p>
+				<p class="contact-box__text"><span>Телефон / (факс):</span>(057)&nbsp;714&nbsp;94&nbsp;68; +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</p>
+				<p class="contact-box__text"><span>Е-mail: </span> energoinpro04@gmail.com</p>
+				<p class="contact-box__text"><span>Графік роботи:</span>понеділок&nbsp;-&nbsp;п’ятниця: 09:00&nbsp;-&nbsp;18:00, <br>субота,&nbsp;неділя: вихідний</p>
+			</div>
+		</section>
+		<section class="contact-more">
+			<div class="container">
+				<p class="text">З контактними даними <span>операторів системи розподілу </span> Ви можете ознайомитися <a href="files/contact_OSR.pdf" target="_blank"> тут</a>.</p>
+				<div class="contact-more_antikor">
+					<p class="text">Інформацію про <span>факти вчинення корупійних або пов'язаних з корупцією порушень </span> працівниками ТОВ&nbsp;«Енергоінвестпроект» можна повідомляти Відповідальній особі з реалізації Аникорупційої політики Товариства за допогою наступних засобів зв'язку:
+					<p class="text"><span>Tелефон: </span> +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</p>
+					<p class="text"><span>Е-mail: </span> energoinpro.anticor@gmail.com</p>
+					<p class="text"><span>ПІП відповідальної особи: </span>Пономарьова Лілія Анатоліївна</p>
+					<p class="text"><span>Графік роботи: </span>  пн&nbsp;-&nbsp;пт&nbsp;9:00&nbsp;-&nbsp;18:00, сб,&nbsp;нд&nbsp;-&nbsp;вихідний</p>
+				</div>
+				<div class="box">
+					<p class="text"> Зі <span> зверненням, скаргою або претензією </span> Ви можете звернутися до окремого структурного підрозділу ТОВ&nbsp;«Енергоінвестпроект» – клієнтської служби підтримки за допогою наступних засобів зв'язку:
+					<p class="text"><span>Tелефони: </span><br>
+						+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57 (керівник структурного підрозділу – Каспрів Руслан Анатолійович);<br>
+						 +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70 (фахівець з індивідуального обслуговування споживачів – Волошина Олена Миколаївна).</p>
+					<p class="text"><span>Е-mail: </span> eip.info@ukr.net</p>
+					<p class="text"><span>Графік роботи: </span>  пн&nbsp;-&nbsp;пт&nbsp;9:00&nbsp;-&nbsp;18:00, сб,&nbsp;нд&nbsp;-&nbsp;вихідний</p>
+				</div>
+			</div>
+		</section>
+		<section class="fixed-btn">
+			<div class="soc-menu">
+				<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+				<label class="menu-open-button" for="menu-open">
+					<span class="hamburger hamburger-1"></span>
+					<span class="hamburger hamburger-2"></span>
+					<span class="hamburger hamburger-3"></span>
+				</label>
+			  
+				<a href="#" class="menu-item"> </a>
+				<a href="#" class="menu-item"> </a>
+				<a href="https://t.me/joinchat/AAAAAEmPkWMnePvHDiMLAA" class="menu-item" target="_blank"> 
+					<span class="visually-hidden">telegram</span>
+					<img class="tlg" src="img/soc-tlg.png">
+				</a>
+				<a href="https://www.facebook.com/" class="menu-item" target="_blank">
+					<span class="visually-hidden">facebook</span>
+					<img class="fb" src="img/soc-fb.png">
+				</a>
+				<a href="https://twitter.com/explore" class="menu-item" target="_blank">
+					<span class="visually-hidden">twitter</span>
+					<img class="tw" src="img/soc-tw.png">
+				</a>
+			</div>
+
+			<!-- filters -->
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="shadowed-goo">
+						<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+						<feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+						<feOffset in="shadow" dx="1" dy="1" result="shadow" />
+						<feBlend in2="shadow" in="goo" result="goo" />
+						<feBlend in2="goo" in="SourceGraphic" result="mix" />
+			
+					</filter>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in2="goo" in="SourceGraphic" result="mix" />
+					</filter>
+				</defs>
+			</svg>
+			<!-- filters -->	
+
+			<div class="top">
+				<img src="img/Arrow-up.png">
+			</div>
+		</section>
+	</main>
+	
+
+	<footer class="footer">
+		<section class="footer-address">
+			<div class="container">
+				<div class="footer-wrap">
+					<div class="footer__text">
+						<p><span>Юридична адреса: </span> 61013, м.&nbsp;Харків, вул.&nbsp;Шевченка,&nbsp;146, оф.&nbsp;39</p>
+						<p><span>Адреса для листування: </span> 61057, м.&nbsp;Харків, а/с&nbsp;7391</p>
+						<p><span>Телефон / (факс): </span> (057)&nbsp;714&nbsp;94&nbsp;68; +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</p>
+						<p><span>Е-mail: </span> energoinpro04@gmail.com</p>
+					</div>
+					<div class="footer__img"><img src="img/footer-img.png" alt="building"></div>
+					<div class="footer__img-small"><img src="img/footer-img-small.png" alt="building"></div>
+				</div>
+					
+			</div>	
+		</section>
+		
+		<section class="footer-copy">
+			<p>Copyright© 2020. All rights reserved.</p>
+		</section>
+	</footer>
+
+	<!-- <div class="top">
+		<img src="img/Arrow-up.png">
+	</div> -->
+
+	<!-- <script type="text/javascript">
+
+		var openModalBtn = document.querySelector(".callback-btn")
+		var closeModalBtn = document.querySelector(".modal-close");
+		var Modal = document.querySelector(".modal");
+
+		openModalBtn.onclick = function() {
+			Modal.className = 'visible';
+		};
+
+		closeModalBtn.onclick = function() {
+			Modal.className = 'hidden';
+		};
+
+	</script> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src='js/slick.min.js'></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
