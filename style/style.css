@@ -1408,7 +1408,8 @@ ul {
     color: #fff;
     -webkit-transition: color .4s ease;
     -o-transition: color .4s ease;
-    transition: color .4s ease; }
+    transition: color .4s ease;
+    z-index: 1001; }
     .burger-menu__link a:hover {
       color: #B2B0BC; }
   .burger-menu__overlay {
