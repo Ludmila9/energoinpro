@@ -1384,7 +1384,7 @@ ul {
     -ms-flex-align: start;
     align-items: flex-start;
     height: 100%;
-    background-color: rgba(10, 27, 63, 0.7);
+    background-color: rgba(10, 27, 63, 0.8);
     top: -100%;
     right: 0;
     -webkit-transition: 0.2s;
@@ -7609,7 +7609,8 @@ ul {
     -ms-flex-align: center;
     align-items: center; }
   .items-list {
-    height: auto; }
+    height: auto;
+    background-image: none; }
     .items-list-contract {
       margin: 30px auto 50px;
       background: none; }
