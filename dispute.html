@@ -233,10 +233,10 @@
 						<div class="text">
 							Повноваження щодо розгляду звернень, скарг, претензій, а також вирішення спорів у ТОВ&nbsp;«Енергоінвестпроект» покладено на <span>окремий структурний підрозділ – клієнтську службу підтримки </span>.<br>
 							<span>Керівник структурного підрозділу </span> – Каспрів Руслан Анатолійович.<br>
-							Контактний телефон: +38&nbsp;098&nbsp;689&nbsp;26&nbsp;57<br>
+							Контактний телефон: <span id="phone-KSP"><a href="tel:+380986892657">+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</a></span><br>
 							
 							<span>Фахівець з індивідуального обслуговування споживачів </span> – Волошина Олена Миколаївна.<br>
-							Контактний телефон: +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70<br><br>
+							Контактний телефон: <span id="phone-EIP"><a href="tel:+380937614370" >+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70 </a></span><br><br>
 							<span>E-mail: </span> eip.info@ukr.net<br>
 							<span>Графік роботи: </span>  пн&nbsp;-&nbsp;пт&nbsp;9:00&nbsp;-&nbsp;18:00, сб,&nbsp;нд&nbsp;-&nbsp;вихідний.
 						</div>
@@ -350,11 +350,20 @@
 		</section>
 	</footer>
 
-	<!-- <div class="top">
-		<img src="img/Arrow-up.png">
-	</div> -->
+	<!-- phone-call - start -->
+	<script type="text/javascript">
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			document.getElementById("phone-EIP").innerHTML = '<a href="tel:+380937614370">+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</a>';
+			document.getElementById("phone-KSP").innerHTML = '<a href="tel:+380986892657">+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</a>';
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			} else	{
+			document.getElementById("phone-EIP").innerHTML = '<span>+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</span> ';
+			document.getElementById("phone-KSP").innerHTML = '<span>+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</span> ';
+		}
+	</script>
+	<!-- phone-call - end -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src='js/slick.min.js'></script>
 	<script src="js/main.js"></script>
 	

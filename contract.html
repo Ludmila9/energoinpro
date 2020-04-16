@@ -129,7 +129,7 @@
 
 			<div class="container">
 				<div class="box">
-					<p class="text"><span>Якщо у Вас лишилися питання</span>, зателефонуйте до нас за телефоном <span> +38(093)&nbsp;761&nbsp;43&nbsp;70</span>, надішліть електронний лист на пошту <span> energoinpro04@gmail.com</span>, чи скористайтесь <a href="contact.html">формою зворотного зв'язку</a>. Наші фахівці зв'яжуться з Вами і дадуть відповідь на запитання.</p>
+					<p class="text"><span>Якщо у Вас лишилися питання</span>, зателефонуйте до нас за телефоном <span id="phone-EIP"><a href="tel:+380937614370" >+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70 </a></span>, надішліть електронний лист на пошту <span> energoinpro04@gmail.com</span>, чи скористайтесь <a href="contact.html">формою зворотного зв'язку</a>. Наші фахівці зв'яжуться з Вами і дадуть відповідь на запитання.</p>
 
 					<p class="text">Ми прикладаємо всі зусилля, щоб співпраця з вами була довгою та плідною. Дякуємо за довіру! <span> Приєднуйтесь!</span></p>
 				</div>
@@ -145,7 +145,7 @@
 					<div class="title-small">
 						Зміна електропостачальника
 					</div>
-					<p class="text">Кожний Споживач має право в будь-який момент часу змінити постачальника шляхом укладення нового Договору про постачання електричної енергії з іншою енергопостачальною компанією. Докладніше про зміну постачальника читайте <a href="https://zakon.rada.gov.ua/laws/show/v0312874-18"> тут</a>.</p>
+					<p class="text">Кожний Споживач має право в будь-який момент часу змінити постачальника шляхом укладення нового Договору про постачання електричної енергії з іншою енергопостачальною компанією. Докладніше про зміну постачальника читайте <a href="https://zakon.rada.gov.ua/laws/show/v0312874-18#n772" target="_blank"> тут</a>.</p>
 					<p class="text">При виборі електропостачальника радимо звертати увагу не тільки на цінову пропозицію, а й на <span>досвід роботи електропостачальника на ринку електричної енергії, наявність у нього ліцензії та укладених всіх необхідних  договорів з учасниками ринку електричної енергії</span>.</p>
 				</div>
 				<div class="video-box">
@@ -260,11 +260,20 @@
 		</section>
 	</footer>
 
-	<!-- <div class="top">
-		<img src="img/Arrow-up.png">
-	</div> -->
+	<!-- phone-call - start -->
+	<script type="text/javascript">
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			document.getElementById("phone-EIP").innerHTML = '<a href="tel:+380937614370">+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</a>';
+			document.getElementById("phone-KSP").innerHTML = '<a href="tel:+380986892657">+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</a>';
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			} else	{
+			document.getElementById("phone-EIP").innerHTML = '<span>+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</span> ';
+			document.getElementById("phone-KSP").innerHTML = '<span>+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</span> ';
+		}
+	</script>
+	<!-- phone-call - end -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src='js/slick.min.js'></script>
 	<script src="js/main.js"></script>
 	

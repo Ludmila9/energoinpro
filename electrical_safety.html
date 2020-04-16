@@ -273,7 +273,7 @@
 
 						<p class="text">У випадку, якщо Ваші лінії електропередач пошкоджені, <span> організуйте охорону місця пошкодження та <span>негайно</span> повідомте про це <span>відповідальну особу на підриємстві</span>, <a href="files/contact_OSR.pdf" target="_blank">місцевого оператора розподільчих мереж</a></span>, за необхідності викличте швидку допомогу за телефоном <span>103</span> та службу порятунку за номером телефону <span>101</span>.</p>
 
-						<p class="text">Також Ви можете зателефонувати за нашим номером <span>+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</span>, або надішлати листа електронною поштою на адресу: <span>energoinpro04@gmail.com</span>, або <a href="contact.html">заповніть форму звернення </a>на нашому сайті. При цьому в темі звернення обов’язково зазначте «Повідомлення про загрозу електробезпеки».</p>
+						<p class="text">Також Ви можете зателефонувати за нашим номером <span id="phone-EIP"><a href="tel:+380937614370" >+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70 </a></span>, або надіслати листа електронною поштою на адресу: <span>energoinpro04@gmail.com</span>, або <a href="contact.html">заповніть форму звернення </a>на нашому сайті. При цьому в темі звернення обов’язково зазначте «Повідомлення про загрозу електробезпеки».</p>
 					</div>
 					<div class="btn safety-btn">
 						<a href="contact.html">Зв’язатися з нами</a>
@@ -378,11 +378,20 @@
 		</section>
 	</footer>
 
-	<!-- <div class="top">
-		<img src="img/Arrow-up.png">
-	</div> -->
+	<!-- phone-call - start -->
+	<script type="text/javascript">
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			document.getElementById("phone-EIP").innerHTML = '<a href="tel:+380937614370">+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</a>';
+			document.getElementById("phone-KSP").innerHTML = '<a href="tel:+380986892657">+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</a>';
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			} else	{
+			document.getElementById("phone-EIP").innerHTML = '<span>+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</span> ';
+			document.getElementById("phone-KSP").innerHTML = '<span>+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</span> ';
+		}
+	</script>
+	<!-- phone-call - end -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src='js/slick.min.js'></script>
 	<script src="js/main.js"></script>
 	

@@ -108,20 +108,19 @@
 
 						<input type="text" name="company" placeholder="Найменування компанії" required>
 						<input type="text" name="Name" placeholder="Ваше ім'я" required>
-						<input type="text" name="Phone" placeholder="Контактний телефон +380" required>
+						<input type="tel" name="Phone" placeholder="Контактний телефон +380" minlength="10" maxlength="13" required>
 						<input type="email" name="Е-mail" placeholder="Е-mail" required>
-						<select name="question">
-							<option value disabled selected>Оберіть питання</option>
+						<select name="question" required>
+							<option disabled selected>Оберіть питання</option>
 							<option>Щодо діючих тарифів на електроенергію</option>
 							<option>Щодо договірних відносин споживач - енергопостачальник</option>
 							<option>Отримати комерційну пропозицію</option>
 							<option>Направити звернення, претензію, скаргу</option>
 							<option>Повідомлення про загрозу електробезпеки</option>
 							<option>Поставити питання спеціалісту</option>
-							<option>Поставити питання спеціалісту</option>
 						</select>
 						<textarea name="message" rows="10" placeholder="Залиште Ваше повідомлення"></textarea>
-						<button class="btn callback-btn">Надіслати</button>
+						<button type="submit" class="btn callback-btn">Надіслати</button>
 					</form>
 					
 				</div>
@@ -145,7 +144,17 @@
 				<p class="contact-box__title">Також Ви можете зв’язатися<br> з нами за нижчевказаними<br> контактами:</p>
 				<p class="contact-box__text"><span>Юридична адреса: </span>61013, м.&nbsp;Харків, вул.&nbsp;Шевченка,&nbsp;146, оф.&nbsp;39</p>
 				<p class="contact-box__text"><span>Адреса для листування: </span>61057, м.&nbsp;Харків, а/с&nbsp;7391</p>
-				<p class="contact-box__text"><span>Телефон / (факс):</span>(057)&nbsp;714&nbsp;94&nbsp;68; +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</p>
+				<p class="contact-box__text">
+					<span>Телефон / (факс):</span> 
+					<span id="phone-fax">
+						<a href="tel:+380577149468">(057)&nbsp;714&nbsp;94&nbsp;68</a>
+					</span>;
+					<span id="phone-EIP">
+						<a href="tel:+380937614370"> +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70 </a>
+					</span>;
+
+					
+				</p>
 				<p class="contact-box__text"><span>Е-mail: </span> energoinpro04@gmail.com</p>
 				<p class="contact-box__text"><span>Графік роботи:</span>понеділок&nbsp;-&nbsp;п’ятниця: 09:00&nbsp;-&nbsp;18:00, <br>субота,&nbsp;неділя: вихідний</p>
 			</div>
@@ -155,16 +164,27 @@
 				<p class="text">З контактними даними <span>операторів системи розподілу </span> Ви можете ознайомитися <a href="files/contact_OSR.pdf" target="_blank"> тут</a>.</p>
 				<div class="contact-more_antikor">
 					<p class="text">Інформацію про <span>факти вчинення корупційних або пов'язаних з корупцією порушень </span> працівниками ТОВ&nbsp;«Енергоінвестпроект» можна повідомляти Відповідальній особі з реалізації Антикорупційої політики Товариства за допомогою наступних засобів зв'язку:
-					<p class="text"><span>Tелефон: </span> +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</p>
+					<p class="text">
+						<span>Tелефон: </span> 
+						<span id="phone-EIP">
+							<a href="tel:+380937614370"> +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70 </a>
+						</span>
+					</p>
 					<p class="text"><span>Е-mail: </span> energoinpro.anticor@gmail.com</p>
 					<p class="text"><span>ПІП відповідальної особи: </span>Пономарьова Лілія Анатоліївна</p>
 					<p class="text"><span>Графік роботи: </span>  пн&nbsp;-&nbsp;пт&nbsp;9:00&nbsp;-&nbsp;18:00, сб,&nbsp;нд&nbsp;-&nbsp;вихідний</p>
 				</div>
 				<div class="box">
 					<p class="text"> Зі <span> зверненням, скаргою або претензією </span> Ви можете звернутися до окремого структурного підрозділу ТОВ&nbsp;«Енергоінвестпроект» – клієнтської служби підтримки за допомогою наступних засобів зв'язку:
-					<p class="text"><span>Tелефони: </span><br>
-						+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57 (керівник структурного підрозділу – Каспрів Руслан Анатолійович);<br>
-						 +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70 (фахівець з індивідуального обслуговування споживачів – Волошина Олена Миколаївна).</p>
+					<p class="text">
+						<span>Tелефони: </span><br>
+						<span id="phone-KSP">
+							<a href="tel:+380986892657">+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57 </a>
+						</span> (керівник структурного підрозділу – Каспрів Руслан Анатолійович);<br>
+						
+						<span id="phone-EIP">
+							<a href="tel:+380937614370"> +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70 </a>
+						</span> (фахівець з індивідуального обслуговування споживачів – Волошина Олена Миколаївна).</p>
 					<p class="text"><span>Е-mail: </span> eip.info@ukr.net</p>
 					<p class="text"><span>Графік роботи: </span>  пн&nbsp;-&nbsp;пт&nbsp;9:00&nbsp;-&nbsp;18:00, сб,&nbsp;нд&nbsp;-&nbsp;вихідний</p>
 				</div>
@@ -229,10 +249,11 @@
 			<div class="container">
 				<div class="footer-wrap">
 					<div class="footer__text">
-						<p><span>Юридична адреса: </span> 61013, м.&nbsp;Харків, вул.&nbsp;Шевченка,&nbsp;146, оф.&nbsp;39</p>
+						<br><br><br><br>
+						<!-- <p><span>Юридична адреса: </span> 61013, м.&nbsp;Харків, вул.&nbsp;Шевченка,&nbsp;146, оф.&nbsp;39</p>
 						<p><span>Адреса для листування: </span> 61057, м.&nbsp;Харків, а/с&nbsp;7391</p>
 						<p><span>Телефон / (факс): </span> (057)&nbsp;714&nbsp;94&nbsp;68; +38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</p>
-						<p><span>Е-mail: </span> energoinpro04@gmail.com</p>
+						<p><span>Е-mail: </span> energoinpro04@gmail.com</p> -->
 					</div>
 					<div class="footer__img"><img src="img/footer-img.png" alt="building"></div>
 					<div class="footer__img-small"><img src="img/footer-img-small.png" alt="building"></div>
@@ -245,10 +266,6 @@
 			<p>Copyright© 2020. All rights reserved.</p>
 		</section>
 	</footer>
-
-	<!-- <div class="top">
-		<img src="img/Arrow-up.png">
-	</div> -->
 
 	<!-- <script type="text/javascript">
 
@@ -266,7 +283,23 @@
 
 	</script> -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+	<!-- phone-call - start -->
+	<script type="text/javascript">
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			document.getElementById("phone-fax").innerHTML = '<a href="tel:+380577149468">(057)&nbsp;714&nbsp;94&nbsp;68</a>';
+			document.getElementById("phone-EIP").innerHTML = '<a href="tel:+380937614370">+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</a>';
+			document.getElementById("phone-KSP").innerHTML = '<a href="tel:+380986892657">+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</a>';
+
+			} else	{
+			document.getElementById("phone-fax").innerHTML = '<span>(057)&nbsp;714&nbsp;94&nbsp;68</span> ';
+			document.getElementById("phone-EIP").innerHTML = '<span>+38&nbsp;093&nbsp;761&nbsp;43&nbsp;70</span> ';
+			document.getElementById("phone-KSP").innerHTML = '<span>+38&nbsp;098&nbsp;689&nbsp;26&nbsp;57</span> ';
+		}
+	</script>
+	<!-- phone-call - end -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src='js/slick.min.js'></script>
 	<script src="js/main.js"></script>
 	

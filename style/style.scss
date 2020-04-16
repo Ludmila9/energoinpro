@@ -285,10 +285,11 @@ a{
 ul{
 	position: relative;
 	padding: 0 25px;
+	z-index: 15;
 	&:before{
 		content: url(../img/Line-before2.png);
 		display: block;
-		width: 100%;
+		width: 10%;
 		height: 100%;
 		position: absolute;
 		top: 0;
@@ -299,11 +300,11 @@ ul{
 		left: 20px;
 		position: relative;
 		text-align: justify;
+		z-index: 15;
 		&:before{
 			content: url(../img/dot3.png);
 			display: inline-block;
-
-			width: 100%;
+			width: 15%;
 			height: 100%;
 			position: absolute;
 			left: -48px;
@@ -369,6 +370,11 @@ ul{
 			height: 250px;
 			margin-bottom: 80px;
 			background-image: url(../img/pay-lines-bg.png);
+		}
+		&-news{
+			width: 100%;
+			height: auto;
+			flex-direction: row;
 		}
 	}
 	&-row{
@@ -439,6 +445,19 @@ ul{
 		height: 235px;
 		padding: 25px 15px;
 		margin: 10px 20px;
+	}
+	&-news{
+		width: 370px;
+		height: 112px;
+		padding: 25px 15px;
+		margin: 10px 20px;
+		flex-direction: row;
+		justify-content: flex-start;
+		font-weight: 600;
+		& img{
+			margin: 15px 40px 15px 25px;
+			height: auto;
+		}
 	}
 }
 // ITEMS-list - end
@@ -767,6 +786,7 @@ ul{
 	position: relative;
 	margin-bottom: 30px;
 	overflow: hidden;
+	z-index: 90;
 	&:before{
 		content: '';
 		background-image: url(../img/page-bg-gray.png);
@@ -869,6 +889,18 @@ ul{
 			right: -25px;
 			& img{
 				width: 640px;
+				height: auto;
+			}
+		}
+		&-dispute{
+			width: 500px;
+			height: auto;
+			position: relative;
+			margin: 50px 0 0;
+			bottom: 0;
+			right: -25px;
+			& img{
+				width: 500px;
 				height: auto;
 			}
 		}
@@ -1186,10 +1218,16 @@ ul{
 		justify-content: space-between;
 	}
 	&__img{
-		width: 48%;
+		width: 50%;
 		position: relative;
-		left: -190px;
-		padding: 0;
+		text-align: center;
+		margin: 110px 0 0;
+		& img{
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 	&-block{
 		width: 48%;
@@ -1212,13 +1250,7 @@ ul{
 		& span{
 			@include text();
 			font-weight: 600;
-		}/*
-		&-more{
-			@include text();
-			font-weight: 600;
-			text-align: center;
-			margin-bottom: 15px;
-		}*/
+		}
 	}
 	&-slider{
 		height: 430px;
@@ -1328,6 +1360,7 @@ ul{
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	overflow: hidden;
 	&-wrap,
 	&__items{
 		display: flex;
@@ -1524,6 +1557,9 @@ ul{
 		height: 588.23px;
 		overflow: hidden;
 		position: relative;
+		& svg{
+			position: relative;
+		}
 	}
 	&__img-small{
 		width: 699px;
@@ -1539,18 +1575,43 @@ ul{
 .region{
 	fill: #E0E4EF;
 	transition: all 0.7s ease;
-
 	&:hover{
-		fill: #096CF8;
+		fill: #316AFF;
+	}
+}
+.lug,
+.don{
+	fill: #E0E4EF;
+	transition: all 0.7s ease;
+	&:hover{
+		fill: #316AFF;
 	}
 }
 .arc{
-	fill: #EFF1F7;
+	fill: #E0E4EF;
 	&:hover{
-		fill: #EFF1F7;
+		fill: #C7D4FB;
 	}
 }
-	
+.region-don
+.region-lug{
+	fill: #1CBDFF;
+	transition: all 0.7s ease;
+	&:hover{
+		fill: #316AFF;
+	}
+}
+.lug:hover,
+.don:hover{
+	fill: #C7D4FB;
+}
+.don:hover + .region{
+	fill: #316AFF;
+}
+.lug:hover + .region{
+	fill: #316AFF;
+}
+
 .description{
 	position: absolute;
 	right: 0;
@@ -1709,6 +1770,7 @@ ul{
 			padding: 27px 42px;
 			background-color: #fff;
 			box-shadow: 0px 0px 20px #ACACA7;
+			
 		}
 		&__title{
 			@include text();
@@ -1723,6 +1785,23 @@ ul{
 			& span{
 				display: block;
 			}
+			& #phone-EIP{
+				display: inline-block;
+				font-weight: 400;
+				& a,
+				& span{
+					font-weight: 400;
+				}
+			}
+			& #phone-fax{
+				display: inline-block;
+				font-weight: 400;
+				& a,
+				& span{
+					font-weight: 400;
+				}
+			}
+			
 		}
 	}
 	&-more{
@@ -1731,10 +1810,46 @@ ul{
 		align-items: flex-start;
 		justify-content: flex-start;
 		margin: 50px 0 10px;
+		& a{
+			font-weight: 400;
+		}
+		& #phone-EIP{
+			display: inline-block;
+			font-weight: 400;
+			& a,
+			& span{
+				font-weight: 400;
+			}
+		}
+		& #phone-KSP{
+			display: inline-block;
+			font-weight: 400;
+			& a,
+			& span{
+				font-weight: 400;
+			}
+		}
 		&_antikor{
 			margin: 55px 0;
+			& #phone-EIP{
+				display: inline-block;
+				font-weight: 400;
+				& a,
+				& span{
+					font-weight: 400;
+				}
+			}
+			& #phone-KSP{
+				display: inline-block;
+				font-weight: 400;
+				& a,
+				& span{
+					font-weight: 400;
+				}
+			} 
 		}
 	}
+
 }
 
 .callback{
@@ -1752,39 +1867,53 @@ ul{
 		margin: 23px 0;
 		padding: 7px 0;
 		outline: none;
+		@include text();
+		color: #68676F;
+		background-color: transparent !important;
+		& option:nth-of-type(n+1){
+			color: #4445FF;
+		}
 		&::placeholder,
 		& option:first-of-type{
 			@include text();
-			font-size: 0.9rem;
 			color: $light;
+		}
+		& option:hover{
+			background-color: red;
 		}
 	}
 	& textarea{
+		@include text();
 		width: 100%;
 		resize: none;
 		border: 1px solid $light;
 		padding: 7px;
 		margin: 45px 0;
 		outline: none;
+		background-color: transparent;
 		&::placeholder{
 			@include text();
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 			color: $light;
 		}
+		&:focus{
+			color: blue;
+		}
 	}
-	& option{
-		@include text();
+	& input:focus{
+		color: #4445FF;
 	}
-	& option:first-of-type{
-		font-size: 0.9rem;
-		color: $light;
-	}
+	
 	&-btn{
 		background: linear-gradient(309.44deg, #01C9FF 0%, #4445FF 100%);
 		color: #fff;
 		margin: 15px auto;
 		padding: 0 65px;
+		&:focus{
+			background: linear-gradient(309.44deg, #4445FF 0%, #01C9FF 100%);
+		}
 	}
+
 }
 // CONTACT-PAGE - end
 
@@ -2080,13 +2209,33 @@ ul{
 		}
 	}*/
 }
+#news1{
+	& img{
+		width: 82px;
+	}
+}
+#news2{
+	& img{
+		width: 70px;
+	}
+}
+#news3{
+	& img{
+		width: 90px;
+	}
+}
 .box-news{
 	border-bottom: 0.7px solid #ddd;
 }
 .box-news.box{
 	margin-bottom: 0;
 }
-
+.box-news__links{
+	border-top: 0.7px solid #ddd;
+	border-bottom: 0.7px solid #ddd;
+	padding: 20px 0;
+	margin: 50px auto 70px;
+}
 .accordion{
 	position: relative;
 	top: -70px;
@@ -2621,12 +2770,13 @@ ul{
 	text-align: left;
 	opacity: .7;
 	transition: all 0.6s ease;
+	z-index: 20;
 	&:hover{
 		opacity: 1;
 		
 	}
 	&.soc-active{
-		right: -45px;
+		right: -48px;
 	}
 }
 
@@ -2729,15 +2879,6 @@ ul{
 		}
 		&-electrical{
 			margin: 40px auto 60px;
-		}
-	}
-	.about{
-		&__img{
-			left: -100px;
-			& img{
-				width: 700px;
-				height: auto;
-			}
 		}
 	}
 	.advantages{
@@ -2896,12 +3037,8 @@ ul{
 		}
 	}
 	.about{
-		&__img{
-			left: -150px;
-			& img{
-				width: 650px;
-				height: auto;
-			}
+		&-block{
+			width: 50%;
 		}
 		&-slider{
 			&__item{
@@ -2913,7 +3050,7 @@ ul{
 		}
 	}
 	.advantages{
-		max-width: 1300px;
+		max-width: 1201px;
 		&__item{
 			margin: 30px;
 		}
@@ -3110,16 +3247,19 @@ ul{
 		}
 	}
 	.about{
-		margin: 110px 0;
+		&__title{
+			margin: 15px 0 20px;
+		}
 		&__img{
-			top: 60px;
-			left: -170px;
+			margin-top: 110px;
+			left: -60px;
+			text-align: left;
 			& img{
-				width: 600px;
-				height: auto;
+				width: 104%;
 			}
 		}
 		&-block{
+			width: 50%;
 			padding: 0;
 		}
 	}
@@ -3166,8 +3306,8 @@ ul{
 	}
 	.map{
 		&__text{
-			margin-top: 120px;
-			right: -30px;
+			margin-top: 100px;
+			right: -40px;
 		}
 	}
 	.description{
@@ -3198,6 +3338,13 @@ ul{
 				right: -50px;
 				& img{
 					width: 560px;
+				}
+			}
+			&-dispute{
+				width: 450px;
+				margin: 50px 0 0;
+				& img{
+					width: 450px;
 				}
 			}
 			&-electrical{
@@ -3409,14 +3556,12 @@ ul{
 		}
 	}
 	.about{
-		margin: 70px 0 60px;
+		margin: 90px 0 60px;
 		&__img{
-			width: 45%;
-			top: 90px;
-			left: -160px;
+			width: 47%;
+			left: -60px;
 			& img{
-				width: 560px;
-				height: auto;
+				width: 107%;
 			}
 		}
 		&__title{
@@ -3489,13 +3634,16 @@ ul{
 	.map{
 		margin: 40px 0 50px;
 		&__text{
-			margin-top: 120px;
-			right: -30px;
+			margin-top: 100px;
+			right: -50px;
+		}
+		&__img-big{
+			margin-top: 20px;
 		}
 	}
 	.description{
 		margin-top: 90px;
-		right: -40px;
+		right: -50px;
 		box-shadow: none;
 		& img{
 			margin: 10px 15px 10px 7px;
@@ -3552,10 +3700,10 @@ ul{
 				}
 			}
 			&-dispute{
-				margin: 0;
-				right: -10px;
+				width: 420px;
+				margin: 70px 0 0;
 				& img{
-					width: 520px;
+					width: 420px;
 				}
 			}
 			&-electrical{
@@ -3860,12 +4008,11 @@ ul{
 			margin: 15px auto 20px;
 		}
 		&__img{
-			width: 45%;
-			top: 90px;
-			left: -120px;
+			margin: 130px 0 0;
+			width: 47%;
+			left: -170px;
 			& img{
-				width: 500px;
-				height: auto;
+				width: 140%;
 			}
 		}
 		&-block{
@@ -3947,23 +4094,36 @@ ul{
 			margin: 30px auto 40px;
 		}
 		&__text{
-			margin-top: 110px;
-			right: -30px;
+			position: relative;
+			width: 80%;
+			top: 0;
+			right: 0;
+			left: 0;
+			text-align: center;
+			margin: 20px auto 38px;
 		}
 		&__img{
 			& svg{
-				width: 899px;
-				height: 589px;
+				width: 699px;
+				height: 458px;
+			}
+			&-big{
+				margin-top: 38px;
+				display: none;
+			}
+			&-small{
+				display: block;
 			}
 		}
 	}
 	.description{
 		left: 0;
-		bottom: 110px;
+		bottom: 50px;
 		box-shadow: none;
 		& img{
 			margin: 10px 15px 10px 7px;
-			width: 60px;
+			height: 80px;
+			width: auto;
 		}
 	}
 	.links{
@@ -4020,10 +4180,10 @@ ul{
 				}
 			}
 			&-dispute{
-				margin: 0;
-				right: 10px;
+				width: 420px;
+				margin: 70px 0 0;
 				& img{
-					width: 500px;
+					width: 420px;
 				}
 			}
 			&-electrical{
@@ -4242,8 +4402,9 @@ ul{
 	}
 	.nav{
 		&-menu{
+			padding: 0;
 			&__item{
-				margin: 0 15px;
+				margin: 0 12px;
 			}
 		}
 	}
@@ -4478,12 +4639,13 @@ ul{
 			margin: 30px auto 40px;
 		}
 		&__text{
-			/*margin-top: 110px;
-			right: -30px;*/
-			width: 200px;
+			position: relative;
+			width: 80%;
+			top: 0;
+			right: 0;
 			left: 0;
-			bottom: 60px;
-			text-align: left;
+			text-align: center;
+			margin: 20px auto 38px;
 		}
 		&__img-big{
 			display: none;
@@ -4499,9 +4661,11 @@ ul{
 		left: 0;
 		bottom: 50px;
 		box-shadow: none;
+		background-color: transparent;
 		& img{
 			margin: 10px 15px 10px 7px;
-			width: 60px;
+			height: 80px;
+			width: auto;
 		}
 	}
 	.links{
@@ -4564,10 +4728,10 @@ ul{
 				}
 			}
 			&-dispute{
-				margin: 0;
-				right: 10px;
+				width: 400px;
+				margin: 90px 0 0;
 				& img{
-					width: 480px;
+					width: 400px;
 				}
 			}
 			&-electrical{
@@ -5063,10 +5227,13 @@ ul{
 			margin: 30px auto 40px;
 		}
 		&__text{
-			width: 200px;
+			position: relative;
+			width: 80%;
+			top: 0;
+			right: 0;
 			left: 0;
-			bottom: 60px;
-			text-align: left;
+			text-align: center;
+			margin: 20px auto 38px;
 		}
 		&__img-big{
 			display: none;
@@ -5079,13 +5246,16 @@ ul{
 		flex-direction: column;
 		align-items: center;
 		width: 220px;
-		left: -20px;
-		bottom: 50px;
+		height: 150px;
+		left: -30px;
+		bottom: 20px;
 		box-shadow: none;
 		text-align: center;
+		background-color: transparent;
 		& img{
 			margin: 10px 15px 10px 7px;
-			width: 60px;
+			height: 70px;
+			width: auto;
 		}
 	}
 	.links{
@@ -5153,10 +5323,11 @@ ul{
 				}
 			}
 			&-dispute{
-				margin: 0;
-				right: 0;
+				width: 250px;
+				margin: 90px 0 0;
+				right: 50px;
 				& img{
-					width: 500px;
+					width: 350px;
 				}
 			}
 			&-electrical{
@@ -5727,14 +5898,15 @@ ul{
 	.map{
 		margin: 20px 0 15px;
 		&__title{
-			margin: 30px auto 60px;
+			margin: 30px auto 20px;
 		}
 		&__text{
 			width: 90%;
 			/*left: 0;*/
 			top: 0;
 			text-align: center;
-			margin: 100px auto 0;
+			margin: 20px auto 20px;
+			position: relative;
 		}
 		&__img-big{
 			display: none;
@@ -5744,7 +5916,7 @@ ul{
 		}
 		&__img{
 			display: block;
-			margin-top: 50px;
+			margin-top: 20px;
 			& img{
 				width: 550px;
 				height: auto;
@@ -5821,10 +5993,11 @@ ul{
 				}
 			}
 			&-dispute{
-				margin: 0;
-				right: 20px;
+				width: 430px;
+				margin: 20px 0 0;
+				right: 0;
 				& img{
-					width: 600px;
+					width: 430px;
 				}
 			}
 			&-electrical{
@@ -6435,13 +6608,14 @@ ul{
 	.map{
 		margin: 20px 0 15px;
 		&__title{
-			margin: 30px auto 60px;
+			margin: 30px auto 20px;
 		}
 		&__text{
+			position: relative;
 			width: 90%;
 			top: 0;
 			text-align: center;
-			margin: 100px auto 0;
+			margin: 20px auto 30px;
 		}
 		&__img-big{
 			display: none;
@@ -6451,7 +6625,7 @@ ul{
 		}
 		&__img{
 			display: block;
-			margin-top: 70px;
+			margin-top: 30px;
 			& img{
 				width: 480px;
 				height: auto;
@@ -6529,10 +6703,11 @@ ul{
 				}
 			}
 			&-dispute{
-				margin: 50px 0 0;
-				right: 20px;
+				width: 400px;
+				margin: 70px 0 0;
+				right: 0;
 				& img{
-					width: 590px;
+					width: 400px;
 				}
 			}
 			&-electrical{
@@ -6980,10 +7155,10 @@ ul{
 	}
 	.video{
 		&-box{
-			width: 370px;
+			width: 400px;
 			height: 230px;
 			margin: 60px auto 100px;
-			left: -10px;
+			left: -25px;
 			/*overflow: hidden;*/
 			&:before{
 				width: 320px;
@@ -6992,7 +7167,7 @@ ul{
 				bottom: -50px;
 			}
 			& video{
-				width: 370px;
+				width: 400px;
 				height: 230px;
 				object-fit: cover;
 				object-position: center;
@@ -7001,7 +7176,7 @@ ul{
 		&__logo{
 			width: 70px;
 			height: 60px;
-			right: -10px;
+			right: 0;
 			&-img{
 				width: 35px;
 				height: 35px;
@@ -7216,13 +7391,14 @@ ul{
 	.map{
 		margin: 40px 0 15px;
 		&__title{
-			margin: 30px auto 60px;
+			margin: 30px auto 20px;
 		}
 		&__text{
-			width: 95%;
+			position: relative;
+			width: 100%;
 			top: 0;
 			text-align: center;
-			margin: 100px auto 0;
+			margin: 20px auto 24px;
 		}
 		&__img-big{
 			display: none;
@@ -7232,7 +7408,7 @@ ul{
 		}
 		&__img{
 			display: block;
-			margin-top: 70px;
+			margin-top: 24px;
 			& img{
 				width: 380px;
 				height: auto;
@@ -7325,10 +7501,11 @@ ul{
 				}
 			}
 			&-dispute{
-				margin: 50px 0 0;
-				right: 20px;
+				width: 360px;
+				margin: 80px 0 0;
+				right: 15px;
 				& img{
-					width: 580px;
+					width: 360px;
 				}
 			}
 			&-electrical{
@@ -7560,14 +7737,14 @@ ul{
 		}
 		&__img{
 			width: 118%;
-			height: 350px;
+			height: 320px;
 			margin: 10px auto 25px;
 			z-index: 0;
 			left: -8%;
 			position: relative;
 			& img{
 				width: 100%;
-				height: 350px;
+				height: 320px;
 
 			}
 		}
@@ -7600,13 +7777,14 @@ ul{
 	.accordionItem{
 		width: 100%;
 	}
-	/*.top{
-		width: 42px;
-		height: 42px;
+	.top{
 		&.active{
 			right: 10px;
 		}
-	}*/
+	}
+	.soc-menu.soc-active{
+		right: -60px;
+	}
 }
 
 
@@ -7975,13 +8153,14 @@ ul{
 	.map{
 		margin: 20px 0 15px;
 		&__title{
-			margin: 30px auto 60px;
+			margin: 30px auto 20px;
 		}
 		&__text{
-			width: 95%;
+			position: relative;
+			width: 100%;
 			top: 0;
 			text-align: center;
-			margin: 100px auto 0;
+			margin: 20px auto 24px;
 		}
 		&__img-big{
 			display: none;
@@ -7991,7 +8170,7 @@ ul{
 		}
 		&__img{
 			display: block;
-			margin-top: 70px;
+			margin-top: 24px;
 			& img{
 				width: 300px;
 				height: auto;
@@ -8096,10 +8275,11 @@ ul{
 				}
 			}
 			&-dispute{
-				margin: 50px 0 0;
-				right: 20px;
+				width: 300px;
+				margin: 80px 0 0;
+				right: 15px;
 				& img{
-					width: 520px;
+					width: 300px;
 				}
 			}
 			&-electrical{
@@ -8231,7 +8411,17 @@ ul{
 		right: 0;
 	}
 	.disconnection{
-		padding: 0;
+		padding: 15px 0 0;
+	}
+	#disconnection1,
+	#disconnection2,
+	#disconnection3,
+	#disconnection4,
+	#disconnection5{
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	}
 	.app{
 		flex-direction: column;
@@ -8321,14 +8511,14 @@ ul{
 		}
 		&__img{
 			width: 110%;
-			height: 380px;
+			height: 250px;
 			margin: 10px auto 25px;
 			z-index: 0;
 			left: -5%;
 			position: relative;
 			& img{
 				width: 100%;
-				height: 380px;
+				height: 250px;
 
 			}
 		}
