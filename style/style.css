@@ -2674,7 +2674,7 @@ ul {
   height: 700px;
   position: relative; }
   .contact-box__map iframe {
-    width: 1440px;
+    width: 100%;
     height: 700px; }
 
 .contact-box__info {
@@ -2708,11 +2708,11 @@ ul {
   margin: 25px 0; }
   .contact-box__text span {
     display: block; }
-  .contact-box__text #phone-EIP {
+  .contact-box__text #phone-EIP-1 {
     display: inline-block;
     font-weight: 400; }
-    .contact-box__text #phone-EIP a,
-    .contact-box__text #phone-EIP span {
+    .contact-box__text #phone-EIP-1 a,
+    .contact-box__text #phone-EIP-1 span {
       font-weight: 400; }
   .contact-box__text #phone-fax {
     display: inline-block;
@@ -2738,32 +2738,45 @@ ul {
   margin: 50px 0 10px; }
   .contact-more a {
     font-weight: 400; }
-  .contact-more #phone-EIP {
-    display: inline-block;
-    font-weight: 400; }
-    .contact-more #phone-EIP a,
-    .contact-more #phone-EIP span {
-      font-weight: 400; }
+  .contact-more_antikor {
+    margin: 55px 0; }
+  .contact-more #phone-fax,
+  .contact-more #phone-EIP-1,
+  .contact-more #phone-EIP-2,
+  .contact-more #phone-EIP-3,
   .contact-more #phone-KSP {
     display: inline-block;
     font-weight: 400; }
+    .contact-more #phone-fax a,
+    .contact-more #phone-fax span,
+    .contact-more #phone-EIP-1 a,
+    .contact-more #phone-EIP-1 span,
+    .contact-more #phone-EIP-2 a,
+    .contact-more #phone-EIP-2 span,
+    .contact-more #phone-EIP-3 a,
+    .contact-more #phone-EIP-3 span,
     .contact-more #phone-KSP a,
     .contact-more #phone-KSP span {
       font-weight: 400; }
-  .contact-more_antikor {
-    margin: 55px 0; }
-    .contact-more_antikor #phone-EIP {
-      display: inline-block;
-      font-weight: 400; }
-      .contact-more_antikor #phone-EIP a,
-      .contact-more_antikor #phone-EIP span {
-        font-weight: 400; }
-    .contact-more_antikor #phone-KSP {
-      display: inline-block;
-      font-weight: 400; }
-      .contact-more_antikor #phone-KSP a,
-      .contact-more_antikor #phone-KSP span {
-        font-weight: 400; }
+
+.contact #phone-fax,
+.contact #phone-EIP,
+.contact #phone-EIP-2,
+.contact #phone-EIP-3,
+.contact #phone-KSP {
+  display: inline-block;
+  font-weight: 400; }
+  .contact #phone-fax a,
+  .contact #phone-fax span,
+  .contact #phone-EIP a,
+  .contact #phone-EIP span,
+  .contact #phone-EIP-2 a,
+  .contact #phone-EIP-2 span,
+  .contact #phone-EIP-3 a,
+  .contact #phone-EIP-3 span,
+  .contact #phone-KSP a,
+  .contact #phone-KSP span {
+    font-weight: 400; }
 
 .callback {
   margin: 60px 0;
@@ -2781,7 +2794,10 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  /*& input:focus{
+		color: #4445FF;
+	}*/ }
   .callback input,
   .callback select {
     width: 46%;
@@ -2796,10 +2812,10 @@ ul {
     line-height: 1.5em;
     color: #05004E;
     color: #68676F;
-    background-color: transparent !important; }
+    background-color: transparent; }
     .callback input option:nth-of-type(n+1),
     .callback select option:nth-of-type(n+1) {
-      color: #4445FF; }
+      /*color: #4445FF;*/ }
     .callback input::-webkit-input-placeholder,
     .callback input option:first-of-type,
     .callback select::-webkit-input-placeholder,
@@ -2840,9 +2856,6 @@ ul {
       line-height: 1.5em;
       color: #05004E;
       color: #B2B0BC; }
-    .callback input option:hover,
-    .callback select option:hover {
-      background-color: red; }
   .callback textarea {
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 400;
@@ -2855,14 +2868,17 @@ ul {
     padding: 7px;
     margin: 45px 0;
     outline: none;
-    background-color: transparent; }
+    background-color: transparent;
+    /*&:focus{
+			color: blue;
+		}*/ }
     .callback textarea::-webkit-input-placeholder {
       font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.5em;
       color: #05004E;
-      font-size: 0.9rem;
+      /*font-size: 0.9rem;*/
       color: #B2B0BC; }
     .callback textarea:-ms-input-placeholder {
       font-family: 'Open Sans', Arial, sans-serif;
@@ -2870,7 +2886,7 @@ ul {
       font-size: 1rem;
       line-height: 1.5em;
       color: #05004E;
-      font-size: 0.9rem;
+      /*font-size: 0.9rem;*/
       color: #B2B0BC; }
     .callback textarea::-ms-input-placeholder {
       font-family: 'Open Sans', Arial, sans-serif;
@@ -2878,7 +2894,7 @@ ul {
       font-size: 1rem;
       line-height: 1.5em;
       color: #05004E;
-      font-size: 0.9rem;
+      /*font-size: 0.9rem;*/
       color: #B2B0BC; }
     .callback textarea::placeholder {
       font-family: 'Open Sans', Arial, sans-serif;
@@ -2886,12 +2902,8 @@ ul {
       font-size: 1rem;
       line-height: 1.5em;
       color: #05004E;
-      font-size: 0.9rem;
+      /*font-size: 0.9rem;*/
       color: #B2B0BC; }
-    .callback textarea:focus {
-      color: blue; }
-  .callback input:focus {
-    color: #4445FF; }
   .callback-btn {
     background: -webkit-linear-gradient(140.56deg, #01C9FF 0%, #4445FF 100%);
     background: -o-linear-gradient(140.56deg, #01C9FF 0%, #4445FF 100%);
@@ -3580,6 +3592,20 @@ ul {
       color: #05004E;
       color: #fff;
       font-size: 0.775rem; }
+  .footer #phone-fax,
+  .footer #phone-EIP-2,
+  .footer #phone-KSP {
+    display: inline-block;
+    font-weight: 400; }
+    .footer #phone-fax a,
+    .footer #phone-fax span,
+    .footer #phone-EIP-2 a,
+    .footer #phone-EIP-2 span,
+    .footer #phone-KSP a,
+    .footer #phone-KSP span {
+      font-weight: 400;
+      font-size: 0.775rem;
+      color: #fff; }
 
 .top {
   position: fixed;

@@ -1757,7 +1757,7 @@ ul{
 			height: 700px;
 			position: relative;
 			& iframe{
-				width: 1440px;
+				width: 100%;
 				height: 700px;
 			}
 		}
@@ -1785,7 +1785,7 @@ ul{
 			& span{
 				display: block;
 			}
-			& #phone-EIP{
+			& #phone-EIP-1{
 				display: inline-block;
 				font-weight: 400;
 				& a,
@@ -1813,14 +1813,13 @@ ul{
 		& a{
 			font-weight: 400;
 		}
-		& #phone-EIP{
-			display: inline-block;
-			font-weight: 400;
-			& a,
-			& span{
-				font-weight: 400;
-			}
+		&_antikor{
+			margin: 55px 0;
 		}
+		& #phone-fax,
+		& #phone-EIP-1,
+		& #phone-EIP-2,
+		& #phone-EIP-3,
 		& #phone-KSP{
 			display: inline-block;
 			font-weight: 400;
@@ -1829,27 +1828,19 @@ ul{
 				font-weight: 400;
 			}
 		}
-		&_antikor{
-			margin: 55px 0;
-			& #phone-EIP{
-				display: inline-block;
-				font-weight: 400;
-				& a,
-				& span{
-					font-weight: 400;
-				}
-			}
-			& #phone-KSP{
-				display: inline-block;
-				font-weight: 400;
-				& a,
-				& span{
-					font-weight: 400;
-				}
-			} 
+	}
+	& #phone-fax,
+	& #phone-EIP,
+	& #phone-EIP-2,
+	& #phone-EIP-3,
+	& #phone-KSP{
+		display: inline-block;
+		font-weight: 400;
+		& a,
+		& span{
+			font-weight: 400;
 		}
 	}
-
 }
 
 .callback{
@@ -1869,17 +1860,14 @@ ul{
 		outline: none;
 		@include text();
 		color: #68676F;
-		background-color: transparent !important;
+		background-color: transparent;
 		& option:nth-of-type(n+1){
-			color: #4445FF;
+			/*color: #4445FF;*/
 		}
 		&::placeholder,
 		& option:first-of-type{
 			@include text();
 			color: $light;
-		}
-		& option:hover{
-			background-color: red;
 		}
 	}
 	& textarea{
@@ -1893,16 +1881,16 @@ ul{
 		background-color: transparent;
 		&::placeholder{
 			@include text();
-			font-size: 0.9rem;
+			/*font-size: 0.9rem;*/
 			color: $light;
 		}
-		&:focus{
+		/*&:focus{
 			color: blue;
-		}
+		}*/
 	}
-	& input:focus{
+	/*& input:focus{
 		color: #4445FF;
-	}
+	}*/
 	
 	&-btn{
 		background: linear-gradient(309.44deg, #01C9FF 0%, #4445FF 100%);
@@ -2503,6 +2491,18 @@ ul{
 			@include text();
 			color: #fff;
 			font-size: 0.775rem;
+		}
+	}
+	& #phone-fax,
+	& #phone-EIP-2,
+	& #phone-KSP{
+		display: inline-block;
+		font-weight: 400;
+		& a,
+		& span{
+			font-weight: 400;
+			font-size: 0.775rem;
+			color: #fff;
 		}
 	}
 }
