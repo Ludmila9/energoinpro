@@ -1,6 +1,4 @@
 // scroll - start
-	
-	
 	$("a.scroll-to").on("click", function(e){
 		e.preventDefault();
 		var anchor = $(this).attr('href');

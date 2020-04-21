@@ -20,7 +20,7 @@ $textFont-size: 1rem;	// 16px
 $breakpoints: (
 				xs: 0,
 				sm: 575px,
-				md: 768px,
+				md: 802px,
 				lg: 1025px,
 				xl: 1200px,
 				xxl: 1440px
@@ -1510,10 +1510,10 @@ ul{
 		margin: 30px 0 5px;
 	}
 	& p{
-		@include text();
+		/*@include text();*/
 		color: #fff;
 		margin: 5px 0 30px;
-		opacity: 0.8;
+		/*opacity: 0.8;*/
 		& a{
 			color: #fff;
 			text-decoration: underline ;
@@ -1840,6 +1840,10 @@ ul{
 		& span{
 			font-weight: 400;
 		}
+	}
+	&-footer__text{
+		margin-top: 80px !important;
+		opacity: 0;
 	}
 }
 
@@ -2514,7 +2518,7 @@ ul{
 .top{
 	position: fixed;
 	bottom: 25px;
-	right: -100px;
+	right: -150px;
 	background: linear-gradient(284.54deg, #01C9FF 0%, #6647E9 100%);
 	z-index: 1200;
 	border-radius: 50%;
@@ -2685,9 +2689,9 @@ ul{
 	border-radius: 100%;
 	width: 54px;
 	height: 54px;
-	margin-left: -40px;
+	/*margin-left: -40px;*/
 	position: absolute;
-	top: 20px;
+	/*top: 20px;*/
 	color: white;
 	text-align: center;
 	line-height: 55px;
@@ -2760,11 +2764,11 @@ ul{
 }
 .soc-menu {
 	position: fixed;
-	bottom: 50px;
+	bottom: 100px;
 	right: -150px;
-	padding-left: 190px;
-	width: 280px;
-	height: 130px;
+	/*padding-left: 190px;*/
+	width: 60px;
+	height: 60px;
 	box-sizing: border-box;
 	font-size: 20px;
 	text-align: left;
@@ -2776,7 +2780,7 @@ ul{
 		
 	}
 	&.soc-active{
-		right: -48px;
+		right: 25px;
 	}
 }
 
@@ -2804,6 +2808,7 @@ ul{
 }
 
 .menu-open-button {
+	margin-left: 0;
 	z-index: 2;
 	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	transition-duration: 400ms;
@@ -3048,6 +3053,12 @@ ul{
 		&-block{
 			width: 50%;
 		}
+		&__img{
+			left: -50px;
+			& img{
+				width: 115%;
+			}
+		}
 		&-slider{
 			&__item{
 				padding: 7px;
@@ -3154,6 +3165,9 @@ ul{
 				left: 50px;
 				top: 60px;
 			}
+		}
+		&-more .box{
+			margin-bottom: 40px;
 		}
 	}
 	#contract3{
@@ -3419,6 +3433,9 @@ ul{
 				left: 50px;
 				top: 60px;
 			}
+		}
+		&-more .box{
+			margin-bottom: 40px;
 		}
 	}
 	#contract1{
@@ -3805,6 +3822,9 @@ ul{
 				top: 60px;
 			}
 		}
+		&-more .box{
+			margin-bottom: 40px;
+		}
 	}
 
 	#contract1{
@@ -4073,9 +4093,9 @@ ul{
 		&__img{
 			margin: 130px 0 0;
 			width: 47%;
-			left: -170px;
+			left: -90px;
 			& img{
-				width: 140%;
+				width: 120%;
 			}
 		}
 		&-block{
@@ -4147,7 +4167,7 @@ ul{
 			margin: 250px auto;
 			right: -30px;
 			& img{
-				width: 250px;
+				width: 300px;
 			}
 		}
 	}
@@ -4309,6 +4329,12 @@ ul{
 				left: 50px;
 				top: 60px;
 			}
+		}
+		&-more .box{
+			margin-bottom: 40px;
+		}
+		&-footer__text{
+			opacity: 1;
 		}
 	}
 
@@ -4713,11 +4739,23 @@ ul{
 		}
 	}
 	.steps{
+		background-image: none;
 		&__title{
-			margin: 50px auto;
+			margin: 15px auto 50px;
+			color: $accent;
+		}
+		&__text{
+			& p,
+			& span{
+				color: $accent;
+			}
+			& .text a{
+				color: $accent;
+			}
 		}
 		&-about{
-			margin: 60px auto 130px;
+			width: 140%;
+			margin: 0 auto 20px;
 			padding: 0;
 		}
 		&__img{
@@ -4906,6 +4944,12 @@ ul{
 					position: relative;
 				}
 			}
+		}
+		&-more .box{
+			margin-bottom: 50px;
+		}
+		&-footer__text{
+			opacity: 1;
 		}
 	}
 	#contract1{
@@ -5332,11 +5376,22 @@ ul{
 		}
 	}
 	.steps{
+		background-image: none;
 		&__title{
-			margin: 60px auto 50px;
+			margin: 15px auto 50px;
+			color: $accent;
+		}
+		&__text{
+			& p,
+			& span{
+				color: $accent;
+			}
+			& .text a{
+				color: $accent;
+			}
 		}
 		&-about{
-			margin: 40px auto 120px;
+			margin: 0 auto 20px;
 			padding: 0;
 		}
 		&__img{
@@ -5400,6 +5455,8 @@ ul{
 		}
 	}
 	.footer{
+		-webkit-background-size: 120% 100%;
+		background-size: 120% 100%;
 		&-address{
 			overflow: hidden;
 		}
@@ -5536,6 +5593,12 @@ ul{
 				}
 			}
 		}
+		&-more .box{
+			margin-bottom: 50px;
+		}
+		&-footer__text{
+			opacity: 1;
+		}
 	}
 	.callback{
 		flex-direction: column;
@@ -5547,7 +5610,7 @@ ul{
 			margin: 15px 0;
 		}
 		& textarea{
-			margin: 25px 0;
+			margin: 50px 0;
 		}
 	}
 	#contract1{
@@ -5993,7 +6056,7 @@ ul{
 			margin: 30px 0;
 		}
 		&__block-2{
-			margin: 50px 0 80px;
+			margin: 50px 0;
 		}
 		&__block-1 .advantages__item:nth-of-type(1){
 			width: 130px;
@@ -6031,11 +6094,22 @@ ul{
 		}
 	}
 	.steps{
+		background-image: none;
 		&__title{
 			margin: 50px auto;
+			color: $accent;
+		}
+		&__text{
+			& p,
+			& span{
+				color: $accent;
+			}
+			& .text a{
+				color: $accent;
+			}
 		}
 		&-about{
-			margin: 40px auto 120px;
+			margin: 0 auto 20px;
 			padding: 0;
 		}
 		&__img{
@@ -6102,7 +6176,9 @@ ul{
 		}
 	}
 	.hero-page{
-		height: 620px;
+		height: 700px;
+		-webkit-background-size: 130% 100%;
+		background-size: 130% 100%;
 		&-wrap{
 			flex-direction: column;
 			align-items: center;
@@ -6125,14 +6201,14 @@ ul{
 				}
 			}
 			&-contract{
-				margin: 0;
+				margin: 40px 0 0;
 				right: 50px;
 				& img{
 					width: 480px;
 				}
 			}
 			&-disconnection{
-				margin: 0;
+				margin: 30px 0 0;
 				top: -30px;
 				right: 10px;
 				& img{
@@ -6155,7 +6231,7 @@ ul{
 				}
 			}
 			&-general{
-				margin: 25px 0 0;
+				margin: 65px 0 0;
 				right: 25px;
 				& img{
 					width: 450px;
@@ -6163,8 +6239,8 @@ ul{
 			}
 			&-price{
 				width: 590px;
-				margin: 0;
-				right: 30px;
+				margin: 40px 0 0;
+				right: 50px;
 				& img{
 					width: 590px;
 				}
@@ -6186,7 +6262,7 @@ ul{
 				}
 			}
 			&-zakon{
-				margin: 40px 0 0;
+				margin: 70px 0 0;
 				width: 520px;
 				right: -10px;
 				& img{
@@ -6196,7 +6272,7 @@ ul{
 			&-news{
 				width: 430px;
 				right: 0;
-				margin: 15px 0 0;
+				margin: 45px 0 0;
 				& img{
 					width: 430px;
 				}
@@ -6234,6 +6310,12 @@ ul{
 				}
 			}
 		}
+		&-more .box{
+			margin-bottom: 50px;
+		}
+		&-footer__text{
+			opacity: 1;
+		}
 	}
 	.callback{
 		flex-direction: column;
@@ -6245,7 +6327,7 @@ ul{
 			margin: 15px 0;
 		}
 		& textarea{
-			margin: 25px 0;
+			margin: 50px 0;
 		}
 	}
 	#contract1{
@@ -6453,7 +6535,7 @@ ul{
 			line-height: 1.4;
 			text-align: center;
 			justify-content: center;
-			padding: 70px 0 0;
+			padding: 130px 0 0;
 		}
 		&-small{
 			font-size: 1.3rem;
@@ -6466,10 +6548,26 @@ ul{
 	.burger-menu{
 		display: flex;
 	}
+	.items-row{
+		&-contract{
+			height: auto;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			justify-content: flex-start;
+			-ms-align-items: center;
+			align-items: center;
+		}
+	}
 	.items-list{
 		&-contract{
 			margin: 50px auto;
+			height: auto;
+			background-image: none;
 		}
+
 		&-disconnection{
 			margin: 80px auto 40px;
 		}
@@ -6504,11 +6602,11 @@ ul{
 	}
 	.item{
 		&-contract{
-			width: 170px;
-			height: 170px;
-			padding: 15px 10px;
+			width: 330px;
+			height: 110px;
+			padding: 15px 25px;
 			& a{
-				font-size: 0.9rem;
+				font-size: 1rem;
 			}
 		}
 		&-disconnection{
@@ -6683,85 +6781,91 @@ ul{
 		}
 	}
 	.advantages{
-		max-width: 500px;
+		margin: 30px auto 50px;
+		background: none;
+		max-width: 400px;
+		text-align: center;
 		&__title{
 			margin: 20px auto 30px;
 		}
 		&__text{
-			width: 95px;
-			font-size: 0.9rem;
+			width: 150px;
+			font-size: 1rem;
+			color: $accent;
+			font-weight: 600;
 		}
 		&__items{
-			padding: 30px 0;
+			padding: 10px 0;
 		}
 		&__item{
-			width: 100px;
-			height: 90px;
-			margin: 7px;
-			flex-direction: column;
+			background: linear-gradient(307.81deg, #C2C4CB 7.87%, #E9ECF4 100%);
+			width: 330px;
+			height: 110px;
+			margin: 10px;
 			padding: 15px 7px;
 			& img{
-				display: none;
+				height: 65px;
+				order: -1;
+				margin: 10px;
 			}
 		}
-		&__block-1{
-			margin: 20px 0 50px;
-		}
+		&__block-1,
 		&__block-2{
-			margin: 30px 0 60px;
+			margin: 0;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
 		}
 		&__block-1 .advantages__item:nth-of-type(1){
-			width: 100px;
-			top: -20px;
+			top: 0;
 			left: 0;
 		}
 		&__block-1 .advantages__item:nth-of-type(2){
-			width: 100px;
-			top: -40px;
+			top: 0;
 		}
 		&__block-1 .advantages__item:nth-of-type(3){
-			top: -20px;
-			right: -10px;
+			top: 0;
+			right: 0;
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 		&__block-2 .advantages__item:nth-of-type(1){
-			width: 80px;
-			top: -10px;
-			left: -20px;
-			& .advantages__text{
-				width: 60px;
-			}
+			top: 0;
+			left: 0;
 		}
 		&__block-2 .advantages__item:nth-of-type(2){
-			width: 110px;
-			left: -10px;
-			top: 20px;
+			width: 330px;
+			left: 0;
+			top: 0;
 			padding: 30px 15px;
-			& .advantages__text{
-				width: 105px;
-			}
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 		&__block-2 .advantages__item:nth-of-type(3){
-			width: 100px;
-			top: -30px;
+			top: 0;
 			left: 0;
 		}
 		&__block-2 .advantages__item:nth-of-type(4){
-			width: 115px;
-			top: 10px;
-			right: -5px;
-			& .advantages__text{
-				width: 110px;
-			}
+			top: 0;
+			right: 0;
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 	}
 	.steps{
-		background-size: 140% 135%;
-		background-position: center center;
+		background-image: none;
 		&__title{
-			margin: 40px auto 50px;
+			margin: 50px auto;
+			color: $accent;
+		}
+		&__text{
+			& p,
+			& span{
+				color: $accent;
+			}
+			& .text a{
+				color: $accent;
+			}
 		}
 		&-about{
-			margin: 20px auto 35px;
+			margin: 0 auto 20px;
 			padding: 0;
 		}
 		&__img{
@@ -6830,7 +6934,10 @@ ul{
 		}
 	}
 	.hero-page{
-		height: 620px;
+		-webkit-background-size: 200% 120%;
+		background-size: 200% 120%;
+		background-position: top center;
+		height: 680px;
 		&-wrap{
 			padding-top: 50px;
 			flex-direction: column;
@@ -6844,22 +6951,22 @@ ul{
 			width: 100%;
 			&-contact{
 				width: 100%;
-				margin: 70px 0 0;
+				margin: 90px 0 0;
 				right: 30px;
 				& img{
-					width: 550px;
+					width: 600px;
 				}
 			}
 			&-contract{
 				width: 100%;
-				margin: 40px 0 0;
+				margin: 60px 0 0;
 				right: 60px;
 				& img{
 					width: 480px;
 				}
 			}
 			&-disconnection{
-				margin: 20px 0 0;
+				margin: 40px 0 0;
 				right: 10px;
 				& img{
 					width: 450px;
@@ -6867,21 +6974,21 @@ ul{
 			}
 			&-dispute{
 				width: 400px;
-				margin: 70px 0 0;
+				margin: 90px 0 0;
 				right: 0;
 				& img{
-					width: 400px;
+					width: 380px;
 				}
 			}
 			&-electrical{
-				margin: 50px 0 0;
+				margin: 70px 0 0;
 				right: 0;
 				& img{
 					width: 480px;
 				}
 			}
 			&-general{
-				margin: 45px 0 0;
+				margin: 100px 0 0;
 				right: 25px;
 				& img{
 					width: 450px;
@@ -6889,7 +6996,7 @@ ul{
 			}
 			&-price{
 				width: 550px;
-				margin: 50px 0 0;
+				margin: 70px 0 0;
 				right: 50px;
 				& img{
 					width: 550px;
@@ -6900,7 +7007,7 @@ ul{
 				margin: 40px 0 0;
 				right: 0;
 				& img{
-					width: 480px;
+					width: 460px;
 				}
 			}
 			&-user{
@@ -6912,7 +7019,7 @@ ul{
 				}
 			}
 			&-zakon{
-				margin: 80px 0 0;
+				margin: 100px 0 0;
 				width: 500px;
 				right: -10px;
 				& img{
@@ -6922,7 +7029,7 @@ ul{
 			&-news{
 				width: 400px;
 				right: 0;
-				margin: 15px 0 0;
+				margin: 70px 0 0;
 				& img{
 					width: 400px;
 				}
@@ -6938,6 +7045,7 @@ ul{
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
+			margin-bottom: -50px;
 		}
 		&-box{
 			height: auto;
@@ -6975,6 +7083,9 @@ ul{
 		&-more{
 			margin: 0;
 		}
+		&-footer__text{
+			opacity: 1;
+		}
 	}
 	.callback{
 		flex-direction: column;
@@ -6986,29 +7097,19 @@ ul{
 			margin: 15px 0;
 		}
 		& textarea{
-			margin: 25px 0;
+			margin: 40px 0;
 		}
 	}
-	#contract1{
-		left: 5px;
-	}
-	#contract2{
-		left: 0;
-	}
-	#contract3{
-		bottom: 20px;
-		right: 5px;
-	}
-	#contract4{
-		top: 25px;
-		left: 0;
-	}
-	#contract5{
-		top: 10px;
-		top: 10px;
-	}
+	#contract1,
+	#contract2,
+	#contract3,
+	#contract4,
+	#contract5,
 	#contract6{
-		right: 5px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
 	}
 	.disconnection{
 		padding: 15px 0 0;
@@ -7186,13 +7287,6 @@ ul{
 	.box-news__links{
 		margin: 0 auto;
 	}
-	/*.top{
-		width: 42px;
-		height: 42px;
-		&.active{
-			right: 10px;
-		}
-	}*/
 }
 
 @media only screen and (min-width : 401px) and (max-width : 500px){
@@ -7288,7 +7382,7 @@ ul{
 		margin: 7px;
 		&-contract{
 			width: 310px;
-			height: 100px;
+			height: 110px;
 			padding: 15px 25px;
 			& a{
 				font-size: 1rem;
@@ -7362,6 +7456,8 @@ ul{
 		}
 	}
 	.hero{
+		-webkit-background-size: 160% 100%;
+		background-size: 160% 100%;
 		&-wrap{
 			flex-direction: column;
 			align-items: center;
@@ -7416,7 +7512,7 @@ ul{
 		}
 		&__item{
 			width: 300px;
-			height: 130px;
+			height: 140px;
 			margin: 10px;
 			padding: 3px 15px;
 			justify-content: center;
@@ -7482,17 +7578,20 @@ ul{
 		&__text{
 			width: 150px;
 			font-size: 1rem;
+			color: $accent;
+			font-weight: 600;
 		}
 		&__items{
 			padding: 10px 0;
 		}
 		&__item{
+			background: linear-gradient(307.81deg, #C2C4CB 7.87%, #E9ECF4 100%);
 			width: 300px;
 			height: 90px;
 			margin: 7px;
 			padding: 15px 7px;
 			& img{
-				height: 53px;
+				height: 60px;
 				order: -1;
 				margin: 10px;
 			}
@@ -7516,6 +7615,7 @@ ul{
 		&__block-1 .advantages__item:nth-of-type(3){
 			top: 0;
 			right: 0;
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 		&__block-2 .advantages__item:nth-of-type(1){
 			width: 300px;
@@ -7527,6 +7627,7 @@ ul{
 			left: 0;
 			top: 0;
 			padding: 30px 15px;
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 		&__block-2 .advantages__item:nth-of-type(3){
 			width: 300px;
@@ -7537,16 +7638,26 @@ ul{
 			width: 300px;
 			top: 0;
 			right: 0;
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 	}
 	.steps{
-		background-size: 140% 140%;
-		background-position: center center;
+		background-image: none;
 		&__title{
 			margin: 30px auto 50px;
+			color: $accent;
+		}
+		&__text{
+			& p,
+			& span{
+				color: $accent;
+			}
+			& .text a{
+				color: $accent;
+			}
 		}
 		&-about{
-			margin: 40px auto 30px;
+			margin: 20px auto;
 			padding: 0;
 		}
 		&__img{
@@ -7752,6 +7863,7 @@ ul{
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
+			margin-bottom: -50px;
 		}
 		&-box{
 			height: auto;
@@ -7788,6 +7900,16 @@ ul{
 		}
 		&-more{
 			margin: 0 0 20px;
+			& .box:last-of-type{
+				margin-bottom: 60px;
+			}
+			& .text{
+				text-align: left;
+			}
+		}
+		&-footer__text{
+			opacity: 1;
+			margin-top: 0 !important;
 		}
 	}
 	.callback{
@@ -7798,9 +7920,16 @@ ul{
 		& textarea{
 			width: 98%;
 			margin: 15px 0;
+			font-size: 0.9rem;
+			&::placeholder,
+			& option:first-of-type{
+				font-size: 0.9rem;
+			}
 		}
 		& textarea{
-			margin: 25px 0;
+			margin: 40px 0;
+			height: 400px;
+			overflow-y: scroll;
 		}
 	}
 	#contract1,
@@ -7973,7 +8102,7 @@ ul{
 		}
 	}
 	.soc-menu.soc-active{
-		right: -60px;
+		right: 10px;
 	}
 }
 
@@ -8005,7 +8134,7 @@ ul{
 	.text,
 	li,
 	a{
-		font-size: 0.97rem;
+		font-size: 0.9rem;
 		line-height: 1.45;
 	}
 	
@@ -8069,10 +8198,10 @@ ul{
 		margin: 7px;
 		&-contract{
 			width: 280px;
-			height: 120px;
+			height: 100px;
 			padding: 15px 25px;
 			& a{
-				font-size: 1rem;
+				font-size: 0.9rem;
 			}
 		}
 		&-disconnection{
@@ -8088,7 +8217,7 @@ ul{
 		}
 		&-safety{
 			width: 290px;
-			height: 200px;
+			height: 170px;
 			margin: 7px;
 			padding: 0 10px;
 			justify-content: center;
@@ -8204,7 +8333,7 @@ ul{
 		}
 		&__item{
 			width: 300px;
-			height: 120px;
+			height: 140px;
 			margin: 7px;
 			padding: 3px 15px;
 			justify-content: center;
@@ -8250,7 +8379,7 @@ ul{
 			margin: 15px 0;
 		}
 		&-slider{
-			height: 550px;
+			height: 450px;
 			margin-top: 10px;
 			&__item{
 				padding: 5px;
@@ -8284,16 +8413,21 @@ ul{
 		&__title{
 			margin: 20px auto 30px;
 		}
+		&__text{
+			color: $accent;
+			font-weight: 600;
+		}
 		&__items{
 			padding: 10px 0;
 		}
 		&__item{
+			background: linear-gradient(307.81deg, #C2C4CB 7.87%, #E9ECF4 100%);
 			width: 266px;
 			height: 90px;
 			margin: 7px;
 			padding: 15px 7px;
 			& img{
-				height: 48px;
+				height: 60px;
 				order: -1;
 				margin: 10px;
 			}
@@ -8315,6 +8449,7 @@ ul{
 		&__block-1 .advantages__item:nth-of-type(3){
 			top: 0;
 			right: 0;
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 		&__block-2 .advantages__item:nth-of-type(1){
 			top: 0;
@@ -8323,6 +8458,7 @@ ul{
 		&__block-2 .advantages__item:nth-of-type(2){
 			left: 0;
 			top: 0;
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 		&__block-2 .advantages__item:nth-of-type(3){
 			width: 266px;
@@ -8332,19 +8468,23 @@ ul{
 		&__block-2 .advantages__item:nth-of-type(4){
 			top: 0;
 			right: 0;
+			background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%);
 		}
 	}
 	.steps{
-		background-size: 140% 140%;
-		background-position: center center;
+		background-image: none;
 		&__text{
 			& p,
 			& span{
-				font-size: 0.975rem;
+				color: $accent;
+			}
+			& .text a{
+				color: $accent;
 			}
 		}
 		&__title{
 			margin: 20px auto 40px;
+			color: $accent;
 		}
 		&-about{
 			margin: 40px auto 20px;
@@ -8551,6 +8691,7 @@ ul{
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
+			margin-bottom: -60px;
 		}
 		&-box{
 			height: auto;
@@ -8584,9 +8725,21 @@ ul{
 				margin: 10px 0;
 				font-size: 0.9rem;
 			}
+			
 		}
+
 		&-more{
 			margin: 0 0 20px;
+			& .text{
+				text-align: left;
+			}
+			& .box:last-of-type{
+				margin-bottom: 60px;
+			}
+		}
+		&-footer__text{
+			opacity: 1;
+			margin-top: 0 !important;
 		}
 	}
 	.callback{
@@ -8598,9 +8751,16 @@ ul{
 		& textarea{
 			width: 98%;
 			margin: 15px 0;
+			font-size: 0.9rem;
+			&::placeholder,
+			& option:first-of-type{
+				font-size: 0.9rem;
+			}
 		}
 		& textarea{
-			margin: 25px 0;
+			margin: 40px 0;
+			height: 400px;
+			overflow-y: scroll;
 		}
 	}
 	#contract1,
