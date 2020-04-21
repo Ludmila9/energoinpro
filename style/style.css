@@ -8322,11 +8322,11 @@ ul {
     .advantages__items {
       padding: 10px 0; }
     .advantages__item {
-      background: -webkit-linear-gradient(142.19deg, #C2C4CB 7.87%, #E9ECF4 100%);
-      background: -o-linear-gradient(142.19deg, #C2C4CB 7.87%, #E9ECF4 100%);
-      background: linear-gradient(307.81deg, #C2C4CB 7.87%, #E9ECF4 100%);
-      width: 266px;
-      height: 90px;
+      background: -webkit-linear-gradient(142.19deg, #DADCDF 7.87%, #E9ECF4 100%);
+      background: -o-linear-gradient(142.19deg, #DADCDF 7.87%, #E9ECF4 100%);
+      background: linear-gradient(307.81deg, #DADCDF 7.87%, #E9ECF4 100%);
+      width: 290px;
+      height: 100px;
       margin: 7px;
       padding: 15px 7px; }
       .advantages__item img {
@@ -8355,28 +8355,29 @@ ul {
     .advantages__block-1 .advantages__item:nth-of-type(3) {
       top: 0;
       right: 0;
-      background: -webkit-linear-gradient(142.19deg, #E9ECF4 7.87%, #C2C4CB 100%);
-      background: -o-linear-gradient(142.19deg, #E9ECF4 7.87%, #C2C4CB 100%);
-      background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%); }
+      background: -webkit-linear-gradient(142.19deg, #E9ECF4 7.87%, #DADCDF 100%);
+      background: -o-linear-gradient(142.19deg, #E9ECF4 7.87%, #DADCDF 100%);
+      background: linear-gradient(307.81deg, #E9ECF4 7.87%, #DADCDF 100%); }
     .advantages__block-2 .advantages__item:nth-of-type(1) {
       top: 0;
       left: 0; }
     .advantages__block-2 .advantages__item:nth-of-type(2) {
+      width: 290px;
       left: 0;
       top: 0;
-      background: -webkit-linear-gradient(142.19deg, #E9ECF4 7.87%, #C2C4CB 100%);
-      background: -o-linear-gradient(142.19deg, #E9ECF4 7.87%, #C2C4CB 100%);
-      background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%); }
+      background: -webkit-linear-gradient(142.19deg, #E9ECF4 7.87%, #DADCDF 100%);
+      background: -o-linear-gradient(142.19deg, #E9ECF4 7.87%, #DADCDF 100%);
+      background: linear-gradient(307.81deg, #E9ECF4 7.87%, #DADCDF 100%); }
     .advantages__block-2 .advantages__item:nth-of-type(3) {
-      width: 266px;
+      width: 290px;
       top: 0;
       left: 0; }
     .advantages__block-2 .advantages__item:nth-of-type(4) {
       top: 0;
       right: 0;
-      background: -webkit-linear-gradient(142.19deg, #E9ECF4 7.87%, #C2C4CB 100%);
-      background: -o-linear-gradient(142.19deg, #E9ECF4 7.87%, #C2C4CB 100%);
-      background: linear-gradient(307.81deg, #E9ECF4 7.87%, #C2C4CB 100%); }
+      background: -webkit-linear-gradient(142.19deg, #E9ECF4 7.87%, #DADCDF 100%);
+      background: -o-linear-gradient(142.19deg, #E9ECF4 7.87%, #DADCDF 100%);
+      background: linear-gradient(307.81deg, #E9ECF4 7.87%, #DADCDF 100%); }
   .steps {
     background-image: none; }
     .steps__text p,
