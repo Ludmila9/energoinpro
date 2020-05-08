@@ -800,10 +800,10 @@ a {
     align-items: center; }
 
 .logo {
-  width: 80px;
+  width: 70px;
   height: auto; }
   .logo img {
-    width: 80px;
+    width: 70px;
     height: auto;
     -o-object-fit: cover;
     object-fit: cover;
@@ -4369,9 +4369,9 @@ ul {
       font-size: 2.3rem;
       width: 60%; }
   .logo {
-    width: 70px; }
+    width: 65px; }
     .logo img {
-      width: 70px; }
+      width: 65px; }
   .items-list-contract {
     margin: 40px auto; }
   .items-list-disconnection {
@@ -4649,9 +4649,9 @@ ul {
       width: 60%;
       font-size: 2.1rem; }
   .logo {
-    width: 70px; }
+    width: 65px; }
     .logo img {
-      width: 70px; }
+      width: 65px; }
   .items-list-contract {
     margin: 40px auto; }
   .items-list-disconnection {
@@ -5018,9 +5018,9 @@ ul {
       width: 60%;
       font-size: 1.9rem; }
   .logo {
-    width: 70px; }
+    width: 65px; }
     .logo img {
-      width: 70px; }
+      width: 65px; }
   .nav-menu {
     padding: 0; }
     .nav-menu__item {
@@ -5480,9 +5480,9 @@ ul {
     display: -ms-flexbox;
     display: flex; }
   .logo {
-    width: 70px; }
+    width: 65px; }
     .logo img {
-      width: 70px; }
+      width: 65px; }
   .items-list-contract {
     margin: 50px auto; }
   .items-list-disconnection {
@@ -6049,9 +6049,9 @@ ul {
     display: -ms-flexbox;
     display: flex; }
   .logo {
-    width: 65px; }
+    width: 60px; }
     .logo img {
-      width: 65px; }
+      width: 60px; }
   .items-list-contract {
     margin: 50px auto; }
   .items-list-disconnection {
@@ -6629,9 +6629,9 @@ ul {
       font-size: 1.3rem;
       width: 90%; }
   .logo {
-    width: 65px; }
+    width: 60px; }
     .logo img {
-      width: 65px; }
+      width: 60px; }
   .nav {
     display: none; }
   .burger-menu {
@@ -7279,9 +7279,9 @@ ul {
   .container {
     max-width: 380px; }
   .logo {
-    width: 65px; }
+    width: 60px; }
     .logo img {
-      width: 65px; }
+      width: 60px; }
   .title {
     font-size: 1.7rem; }
     .title-page {
@@ -8003,9 +8003,9 @@ ul {
   .container {
     max-width: 320px; }
   .logo {
-    width: 60px; }
+    width: 55px; }
     .logo img {
-      width: 60px; }
+      width: 55px; }
   .title {
     font-size: 1.7rem; }
     .title-page {
