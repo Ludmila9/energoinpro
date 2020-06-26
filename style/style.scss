@@ -1004,7 +1004,7 @@ ul{
 			color: #fff;
 			margin: 260px 0 12px;
 		}
-		& p{
+		& h2{
 			@include title();
 			font-size: 1.275rem;
 			color: #fff;
@@ -1054,7 +1054,7 @@ ul{
 			height: 60px;
 			width: 10px;
 		}
-		& p{
+		& h2{
 			@include text();
 			font-size: 0.8125rem;
 			margin: 5px 10px;
@@ -2028,11 +2028,9 @@ ul{
 		height: 46;
 		padding: 3px 45px;
 		margin: 45px auto 75px;
-		& a{
-			color: #fff;
-			margin: 20px auto;
-			font-weight: 600;
-		}
+		color: #fff;
+		margin: 20px auto;
+		font-weight: 600;
 	}
 }
 #electrical1{
@@ -5170,7 +5168,7 @@ ul{
 				font-size: 2.675rem;
 				margin: 130px 0 12px;
 			}
-			& p{
+			& h2{
 				font-size: 1.15rem;
 				text-align: center;
 			}
@@ -5888,7 +5886,7 @@ ul{
 				font-size: 2.675rem;
 				margin: 130px 0 12px;
 			}
-			& p{
+			& h2{
 				font-size: 1.15rem;
 			}
 		}
@@ -6637,7 +6635,7 @@ ul{
 				font-size: 2.3rem;
 				margin: 150px 0 12px;
 			}
-			& p{
+			& h2{
 				font-size: 1.1rem;
 			}
 		}
@@ -7421,7 +7419,7 @@ ul{
 				font-size: 1.9rem;
 				margin: 150px 0 12px;
 			}
-			& p{
+			& h2{
 				font-size: 1rem;
 			}
 		}
@@ -8235,7 +8233,7 @@ ul{
 				font-size: 1.6rem;
 				margin: 150px 0 12px;
 			}
-			& p{
+			& h2{
 				font-size: 0.95rem;
 				text-align: center;
 				margin: 30px;

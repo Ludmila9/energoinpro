@@ -1716,7 +1716,7 @@ ul {
       font-size: 3.175rem;
       color: #fff;
       margin: 260px 0 12px; }
-    .hero-text p {
+    .hero-text h2 {
       font-family: Montserrat, Arial, sans-serif;
       font-size: 2.5rem;
       font-weight: 700;
@@ -1724,7 +1724,7 @@ ul {
       font-size: 1.275rem;
       color: #fff;
       margin: 10px 0; }
-      .hero-text p span {
+      .hero-text h2 span {
         color: #52E2F0; }
   .hero__img {
     width: 600px;
@@ -1773,7 +1773,7 @@ ul {
     .hero-scroll img {
       height: 60px;
       width: 10px; }
-    .hero-scroll p {
+    .hero-scroll h2 {
       font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 400;
       font-size: 1rem;
@@ -3045,11 +3045,10 @@ ul {
     width: 280px;
     height: 46;
     padding: 3px 45px;
-    margin: 45px auto 75px; }
-    .safety-btn a {
-      color: #fff;
-      margin: 20px auto;
-      font-weight: 600; }
+    margin: 45px auto 75px;
+    color: #fff;
+    margin: 20px auto;
+    font-weight: 600; }
 
 #electrical1 {
   left: -245px;
@@ -5571,7 +5570,7 @@ ul {
     .hero-text h1 {
       font-size: 2.675rem;
       margin: 130px 0 12px; }
-    .hero-text p {
+    .hero-text h2 {
       font-size: 1.15rem;
       text-align: center; }
   .hero__img {
@@ -6150,7 +6149,7 @@ ul {
     .hero-text h1 {
       font-size: 2.675rem;
       margin: 130px 0 12px; }
-    .hero-text p {
+    .hero-text h2 {
       font-size: 1.15rem; }
   .hero__img {
     margin: 25px 0 100px;
@@ -6768,7 +6767,7 @@ ul {
     .hero-text h1 {
       font-size: 2.3rem;
       margin: 150px 0 12px; }
-    .hero-text p {
+    .hero-text h2 {
       font-size: 1.1rem; }
   .hero__img {
     margin: 25px 0 100px;
@@ -7446,7 +7445,7 @@ ul {
       .hero-text h1 {
         font-size: 1.9rem;
         margin: 150px 0 12px; }
-      .hero-text p {
+      .hero-text h2 {
         font-size: 1rem; }
     .hero__img {
       margin: 25px 0 100px;
@@ -8169,7 +8168,7 @@ ul {
       .hero-text h1 {
         font-size: 1.6rem;
         margin: 150px 0 12px; }
-      .hero-text p {
+      .hero-text h2 {
         font-size: 0.95rem;
         text-align: center;
         margin: 30px; }
